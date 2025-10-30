@@ -1,12 +1,4 @@
-
-#from player_io import ask_player_action
-def ask_player_action() -> str:
-    user_input = input("please enter S for stand or H for hit \n").upper().strip()
-    if user_input in ["H", "S"]:
-        return user_input
-    else:
-        print("invalid input, try again")
-        return ask_player_action()
+from core.player_io import ask_player_action
 
 def calculate_hand_value(hand: list[dict]) -> int:
     value = 0
