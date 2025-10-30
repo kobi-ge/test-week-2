@@ -1,5 +1,4 @@
 import random
-
 def build_standard_deck() -> list[dict]:
     cards_list = []
     card_dict = {}
@@ -13,7 +12,7 @@ def build_standard_deck() -> list[dict]:
                 rank = "Q"
             elif rank == 13:
                 rank = "K"
-            card_dict["rank"] = rank
+            card_dict["rank"] = str(rank)
             card_dict["suite"] = suite
             cards_list.append(card_dict)
             card_dict = {}
